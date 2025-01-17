@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/input.css" rel="stylesheet">
+</head>
+<body class="p-2">
+    <div class="h-screen bg-blue-600 rounded-b-3xl border-black">
+        <header class="bg-blue-600">
+            <div class="hdr flex flex-row py-4 px-14 text-white justify-between items-center">
+                <h1 class=" flex">
+                    <img src="./assets/logo.png" alt="">
+                </h1>
+                <div class="flex flex-row  justify-items-center gap-8 items-center">
+                    <nav class="p-2 bg-blue-300 rounded-3xl px-8 cursor-pointer">Home</nav>
+                    <nav class="cursor-pointer">Our Shop</nav>
+                    <nav class="cursor-pointer">Product Details</nav>
+                    <nav class="cursor-pointer">Contact Us</nav>
+                    <nav class="cursor-pointer">
+                        <button class="p-2 bg-red-500 rounded-4xlg px-8">SignIn</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilwing hsjged</title>
+    <link rel="stylesheet" href="./src//input.css">
+</head>
+<body>
+    <div class="h-[130vh] px-20 py-10 object-cover rounded-b-[300px]"
+        style="background-image: url('./assets/banner-bg.jpeg');"
+    >
+        <header 
+            class="flex flex-row justify-between items-center text-white" 
+            style="background-image: url('./ASSETS/banner-bg.jpeg');"
+        >
+            <img src="./assets/logo.png" alt="">
+            <div class="flex flex-row gap-10 items-center">
+                <nav class="bg-blue-300 rounded-3xl py-2 px-8 cursor-pointer">Home</nav>
+                <nav class="cursor-pointer hover:bg-blue-300 py-2 px-4 rounded-3xl">Our Shop</nav>
+                <nav class="cursor-pointer hover:bg-blue-300 py-2 px-4 rounded-3xl">Product details</nav>
+                <nav class="cursor-pointer hover:bg-blue-300 py-2 px-4 rounded-3xl">Contact Us</nav>
+                <nav class="cursor-pointer">
+                    <button class="bg-red-600 py-2 px-8 rounded-3xl">Sign In</button>
+                </nav>
+            </div>
+        </header>
+
+        <section class="flex flex-row align-middle justify-between text-white py-14 gap-5">
+            <div>
+                <h2 class="text-3xl font-bold py-4">Welcome to LUGX</h2>
+                <h1 class="text-8xl font-extrabold">Best Gaming Site <br> Ever</h1>
+
+                <p class="py-4 text-md">
+                    LUGX Gaming is free Bootstrap 5 HTML CSS website  <br>
+                    template for your gaming websites. <br>
+                    You can download and use this layout for commercial purposes. <br>
+                    Please tell your friends about TemplateMo.
+                </p>
+            </div>
+            <div>
+                <img src="./assets/banner-image.jpg" class="rounded-3xl" style="z-index: -1;" alt="">
+                <div class="absolute top-44 bg-blue-800 right-24 px-6 py-2 rounded-3xl text-2xl">$20</div>
+                <div class="absolute bottom-34 rounded-full bg-red-400 p-10 right-31 text-3xl"
+                >
+                    -40%
+                </div>
+            </div>
+        </section>
+        <div class="flex flex-row rounded-3xl mt-[-100px] bg-white w-[500px]
+            justify-between
+        "
+        >
+            <input type="search" placeholder="Type Something" 
+                class="border-none outline-none p-4 bg-transparent"
+            >
+            <button class="bg-red-400 rounded-3xl px-8 text-center font-bold text-2xl text-white">Search Now</button>
+        </div>
+    </div>
+        <section class="px-20 mb-[50px] flex absolute bottom-[-400px] w-full justify-evenly ">
+            <div id="icon-container" class="rounded-2xl grid grid-cols-4 justify-evenly gap-10">
+                
+            </div>
+        </section>
+        <div class="mb-10"></div>
+    <script>
+        // Data array for icons
+        const icons = [
+            { icon: "Icon1", title: "Free Storage" },
+            { icon: "Icon2", title: "Secure Backup" },
+            { icon: "Icon3", title: "Fast Uploads" },
+            { icon: "Icon4", title: "Reliable Access" },
+        ];
+    
+        // Target the container
+        const container = document.getElementById("icon-container");
+    
+        // Generate the HTML dynamically
+        icons.forEach(item => {
+            const div = document.createElement("div");
+            div.className = "bg-blue-200 p-4 flex text-center flex-col h-[250px] rounded-lg";
+    
+            div.innerHTML = `
+                <nav>${item.icon}</nav>
+                <h1>${item.title}</h1>
+            `;
+    
+            container.appendChild(div);
+        });
+    </script>
+    
+</body>
+</html>
