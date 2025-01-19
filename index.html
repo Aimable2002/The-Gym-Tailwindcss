@@ -11,15 +11,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body >
-    <div class="h-[150vh]  px-20 py-10 object-cover rounded-b-[140px]"
+    <div class="h-[150vh] relative  px-20 py-10 object-cover rounded-b-[140px]"
         style="background-image: url('./assets/banner-bg.jpeg');"
     >
         <header 
-            class="fixed w-[98%] top-0 py-4 right-4 flex flex-row justify-between items-center text-white" 
+            class="fixed w-[100%] top-0 py-4 right-0 flex flex-row justify-between items-center text-white" 
             style="background-image: url('./ASSETS/banner-bg.jpeg'); z-index: 1;"
         >
-            <img src="./assets/logo.png" alt="">
-            <div class="flex flex-row gap-10 items-center">
+            <img src="./assets/logo.png" alt="" class="px-4">
+            <div class="flex flex-row gap-10 items-center px-4">
                 <nav class="bg-blue-300 rounded-3xl py-2 px-8 cursor-pointer">Home</nav>
                 <nav class="cursor-pointer hover:bg-blue-300 py-2 px-4 rounded-3xl">Our Shop</nav>
                 <nav class="cursor-pointer hover:bg-blue-300 py-2 px-4 rounded-3xl">Product details</nav>
@@ -75,24 +75,30 @@
                 <h1 class="font-bold text-3xl">Trending Games</h1>
                 <button class="bg-red-400 text-white py-2 px-6 cursor-pointer rounded-3xl">View All</button>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-4">
-                <div class="flex flex-col items-center  bg-gray-300 rounded-3xl">
-                    <div class=" flex items-center relative ">
-                        <img src="./assets/banner-image.jpg" alt="" class="object-fill w-[200px] h-[200px]">
-                        <div class="absolute text-white flex flex-col text-center bg-blue-400 top-0 right-0   px-6 py-2 rounded-3xl text-2xl">
-                            <p class="line-through text-sm">$56</p>
-                            <p>$20</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-start">
-                        <h1>Action</h1>
-                        <div class="flex flex-row">
-                            <h2>Assasin Greed</h2>
-                            <i>icon1</i>
-                        </div>
-                    </div>
-                </div>
+            <div id="trend" class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 xl:grid-cols-6">
+                
+                <!-- trend data will be here  -->
             </div>
+        </div>
+    </section>
+
+    <section class="px-20 py-20 mt-20 rounded-[200px] bg-slate-400">
+        <div>
+            <h1 class="text-red-400 font-bold">Top Games </h1>
+            <div class="flex flex-row justify-between items-center py-4">
+                <h1 class="font-bold text-3xl">Most Played Games</h1>
+                <button class="bg-red-400 text-white py-2 px-6 cursor-pointer rounded-3xl">View All</button>
+            </div>
+            <div id="most" class="grid gap-4 py-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10">
+                
+                <!-- trend data will be here  -->
+            </div>
+        </div>
+    </section>
+    <section class="py-10">
+        <div class="flex items-start flex-col">
+            <h1 class="text-center flex">Categories</h1>
+            <h2 class="flex text-center">Top Categories</h2>
         </div>
     </section>
     <div class="mb-10"></div>
@@ -104,11 +110,82 @@
             { icon: "./assets/featured-03.png", title: "Fast Uploads" },
             { icon: "./assets/featured-04.png", title: "Reliable Access" },
         ];
+
+        const trend_data = [
+            {
+                icons: 'icon1', title: 'Assasin Greed', type: 'Action', image: './assets/trending-01.jpg', dic: '$28', price: '$20'
+            },
+            {
+                icons: 'icon2', title: 'Assasin Greed', type: 'Action', image: './assets/trending-02.jpg', dic: '$48', price: '$40'
+            },
+            {
+                icons: 'icon3', title: 'Assasin Greed', type: 'Action', image: './assets/trending-03.jpg', dic: '$68', price: '$50'
+            },
+            {
+                icons: 'icon4', title: 'Assasin Greed', type: 'Action', image: './assets/trending-04.jpg', dic: '$18', price: '$2'
+            }
+        ]
+
+        const trend = document.getElementById("trend")
+
+        const most = document.getElementById("most")
+
+        trend_data.forEach(item => {
+            const div = document.createElement('div')
+
+            div.className = "flex p-0 flex-col w-[100%]  relative bg-white  shadow-md rounded-3xl";
+
+            div.innerHTML = `
+                
+                    <div class=" flex flex-col   ">
+                        <img src=${item.image} alt="" class="object-fill w-full rounded-3xl">
+                        <div class="absolute text-white flex flex-col text-center bg-red-400 -bottom-6 right-2   px-6 py-2 rounded-3xl text-2xl">
+                            <p class="text-sm">Explore</p>
+                        </div>
+
+                        <div class="flex flex-col items-center p-4 py-10 w-auto">
+                            <h1 class="text-2xl">${item.type}</h1>
+                            <div class="flex flex-row justify-between">
+                                <h2 class="">${item.title}</h2>
+                                <i>${item.icons}</i>
+                            </div>
+                        </div>
+                    </div>
+            `;
+            most.appendChild(div)
+            
+        })
         
+        trend_data.forEach(item => {
+            const div = document.createElement('div')
+
+            div.className = "flex p-0 flex-col w-[80%]  bg-gray-300 rounded-3xl";
+
+            div.innerHTML = `
+                
+                    <div class=" flex flex-col  relative ">
+                        <img src=${item.image} alt="" class="object-fill w-full rounded-3xl">
+                        <div class="absolute text-white flex flex-col text-center bg-blue-400 top-0 right-1   px-6 py-2 rounded-3xl text-2xl">
+                            <p class="line-through text-sm">${item.dic}</p>
+                            <p>${item.price}</p>
+                        </div>
+
+                        <div class="flex flex-col p-4 w-auto">
+                            <h1 class="text-2xl">${item.type}</h1>
+                            <div class="flex flex-row justify-between">
+                                <h2 class="">${item.title}</h2>
+                                <i>${item.icons}</i>
+                            </div>
+                        </div>
+                    </div>
+            `;
+            trend.appendChild(div)
+            
+        })
     
         // Target the container
         const container = document.getElementById("icon-container");
-    
+        
         // Generate the HTML dynamically
         icons.forEach(item => {
             const div = document.createElement("div");
