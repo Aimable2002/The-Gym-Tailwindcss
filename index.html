@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tilwing hsjged</title>
+    <title>Tailwind-TheGym</title>
     <link rel="stylesheet" href="./src/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -25,7 +25,7 @@
                 <nav class="cursor-pointer hover:bg-blue-300 py-2 px-4 rounded-3xl">Product details</nav>
                 <nav class="cursor-pointer hover:bg-blue-300 py-2 px-4 rounded-3xl">Contact Us</nav>
                 <nav class="cursor-pointer">
-                    <button class="bg-red-600 py-2 px-8 rounded-3xl">Sign In</button>
+                    <button class="bg-red-600 cursor-pointer hover:bg-red-300 py-2 px-8 rounded-3xl">Sign In</button>
                 </nav>
             </div>
         </header>
@@ -42,23 +42,23 @@
                     Please tell your friends about TemplateMo.
                 </p>
             </div>
-            <div>
+            <div class="relative">
                 <img src="./assets/banner-image.jpg" class="rounded-3xl" style="z-index: -1;" alt="">
-                <div class="absolute top-28 bg-blue-800 right-24 px-6 py-2 rounded-3xl text-2xl">$20</div>
-                <div class="absolute bottom-[1rem]   right-[22rem]"
+                <div class="absolute top-2 bg-blue-800 right-4 px-6 py-2 rounded-3xl text-2xl">$20</div>
+                <div class="absolute bottom-[1rem]   right-[18rem]"
                 >
                     <p class="py-10 px-5 rounded-full bg-red-400 text-3xl">-40%</p>
                 </div>
             </div>
         </section>
-        <div class="flex flex-row rounded-3xl mt-[-100px] bg-white w-[500px]
+        <div class="flex flex-row rounded-[40px] mt-[-100px] bg-white w-[500px]
             justify-between 
         "
         >
             <input type="search" placeholder="Type Something" 
                 class="border-none outline-none p-4 bg-transparent"
             >
-            <button class="bg-red-400 rounded-3xl px-8 text-center font-bold text-2xl text-white">Search Now</button>
+            <button class="bg-red-400 hover:bg-red-600 rounded-[40px] px-8 text-center font-bold text-2xl text-white">Search Now</button>
         </div>
     </div>
     <section class="relative px-20  bottom-[100px] ">
@@ -73,7 +73,7 @@
             <h1 class="text-red-400 font-bold">TRENDING </h1>
             <div class="flex flex-row justify-between items-center py-4">
                 <h1 class="font-bold text-3xl">Trending Games</h1>
-                <button class="bg-red-400 text-white py-2 px-6 cursor-pointer rounded-3xl">View All</button>
+                <button class="bg-red-400 hover:bg-red-600 text-white py-2 px-6 cursor-pointer rounded-3xl">View All</button>
             </div>
             <div id="trend" class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 xl:grid-cols-6">
                 
@@ -87,9 +87,9 @@
             <h1 class="text-red-400 font-bold">Top Games </h1>
             <div class="flex flex-row justify-between items-center py-4">
                 <h1 class="font-bold text-3xl">Most Played Games</h1>
-                <button class="bg-red-400 text-white py-2 px-6 cursor-pointer rounded-3xl">View All</button>
+                <button class="bg-red-400 hover:bg-red-600 text-white py-2 px-6 cursor-pointer rounded-3xl">View All</button>
             </div>
-            <div id="most" class="grid gap-4 py-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10">
+            <div id="most" class="grid gap-4 py-10 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-10">
                 
                 <!-- trend data will be here  -->
             </div>
@@ -121,7 +121,7 @@
                          adipiscing, sed do eiusmod tempor <br> incididunt.
                     </p>
                     <div class="py-10">
-                        <button class="bg-red-400 py-2 px-6 rounded-3xl">Shop Now</button>
+                        <button class="bg-red-400 hover:bg-red-600 cursor-pointer py-2 px-6 rounded-3xl">Shop Now</button>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                         Lorem ipsum dolor consectetur <br>
                          adipiscing, sed do eiusmod tempor <br> incididunt.
                     </p> 
-                    <button class="bg-red-400 py-2 px-6 rounded-3xl">Shop Now</button>
+                    <button class="bg-red-400 hover:bg-red-600 cursor-pointer py-2 px-6 rounded-3xl">Shop Now</button>
                 </div>
             </div>
         </div>
@@ -214,9 +214,9 @@
 
             div.innerHTML = `
                 
-                    <div class=" flex flex-col   ">
+                    <div class=" flex flex-col   relative">
                         <img src=${item.image} alt="" class="object-fill w-full rounded-3xl">
-                        <div class="absolute text-white flex flex-col text-center bg-red-400 -bottom-6 right-2   px-6 py-2 rounded-3xl text-2xl">
+                        <div class="absolute text-white flex flex-col text-center bg-red-400 hover:bg-red-600 cursor-pointer -bottom-6 right-10   px-6 py-2 rounded-3xl text-2xl">
                             <p class="text-sm">Explore</p>
                         </div>
 
