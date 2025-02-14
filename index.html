@@ -39,16 +39,24 @@
             <p>Normal operations will resume Monday, February 17, 2025</p>
         </div>
     </section>
-    <section class="bg-green" style="background-image: url(
+    <!-- <section class="bg-green min-h-[700px]" style="background-image: url(
         ./assets/avian-bird-flu.jpeg
-    ); object-fit: fill;">
-        <div class="he flex text-center sticky top-0  border-b-black p-6 border-l-white border-t-white border-r-white border justify-between">
-            <p class="">icon1</p>
-            <p class="">iconw</p>
-            <p class="">icon3</p>
+    ); object-fit: fill;"> -->
+    <section class="section object-contain bg-no-repeat" style="background-image: url('./assets/moores-law-teaser.jpeg'); background-size: cover;">
+        <div class="he flex text-center sticky top-0 md:hidden border-b-black p-6 border-l-white border-t-white border-r-white border justify-between">
+            <p class=""><img src="./assets/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 (1).png" width="50px" alt=""></p>
+            <p class="align-middle"><img src="./assets/4c442c5e-4bbd-4521-919b-bf2cb6e945c7 (1).svg" width="140" alt=""></p>
+            <p class=""><img src="./assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="50px"></p>
         </div>
-        <div class="section">
-            <h3>  Health Sciences</h3>
+        <div class="hidden md:inline">
+            <div class="he text-center sticky top-0 flex border-b-black p-6 border-l-white border-t-white border-r-white border justify-between"></div>
+            <p class=""><img src="./assets/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 (1).png" width="50px" alt=""></p>
+            <p class="align-middle"><img src="./assets/4c442c5e-4bbd-4521-919b-bf2cb6e945c7 (1).svg" width="140" alt=""></p>
+            <p class=""><img src="./assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="50px"></p>
+        </div>
+        </div>
+        <div class="section mt-[350px] md:mt-[200px]">
+            <h3 class="md:text-3xl">  Health Sciences</h3>
             <h1 class="text-2xl py-8">
                 How Penn is helping with bird flu research and disease surveillance
 
@@ -60,8 +68,8 @@
         </div>
     </section>
     <section class="section">
-        <div class="flex justify-between text-center">
-            <h1 class="text-3xl text-black">News</h1>
+        <div class="flex justify-between text-center py-10">
+            <h1 class="text-3xl text-black ">News</h1>
             <select className="select select-bordered w-full max-w-xs " style="background-color: white; color: black;">
                 <option disabled selected class="bg-white">Topics</option>
                 <option>Han Solo</option>
@@ -69,7 +77,7 @@
               </select>
         </div>
         <div class="grid sm:grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="">
+            <div class="md:row-span-2 md:col-span-2">
                 <img src="./assets/pavilion-gift-teaser.jpeg" alt="">
                 <div class="flex flex-col">
                     <h4 class="h1 text-red-400  font-thin text-center py-2">Health Sciences</h4>
@@ -80,7 +88,17 @@
                 </div>
             </div>
             <div class="">
-                <img src="./assets/pavilion-gift-teaser.jpeg" alt="" class="hidden md:inline">
+                <img src="./assets/diversity-jackson-hbo-editing.jpeg" alt="" class="hidden md:inline">
+                <div class="flex flex-col">
+                    <h4 class="h1 text-red-400  font-thin text-center py-2">Health Sciences</h4>
+                    <p class="p">
+                        Catherine and Anthony Clifton make transformational gift to accelerate patient 
+                        care, research, and education at Penn Medicine
+                    </p>
+                </div>
+            </div>
+            <div class="">
+                <img src="./assets/detlefsen-classroom-1.jpeg" alt="" class="hidden md:inline">
                 <div class="flex flex-col">
                     <h4 class="h1 text-red-400  font-thin text-center py-2">Health Sciences</h4>
                     <p class="p">
@@ -100,7 +118,7 @@
                 </div>
             </div>
             <div class="">
-                <img src="./assets/pavilion-gift-teaser.jpeg" alt="" class="hidden md:inline">
+                <img src="./assets/detlefsen-classroom-1.jpeg" alt="" class="hidden md:inline">
                 <div class="flex flex-col">
                     <h4 class="h1 text-red-400  font-thin text-center py-2">Health Sciences</h4>
                     <p class="p">
@@ -119,7 +137,7 @@
         <div>
             <img src="./assets/penn-center-innovation (1).jpeg" alt="" class="max-h-[500px] w-full hidden sm:inline">
         </div>
-        <div class="absolute -bottom-20 right-11 bg-blue-500 w-[80%]">
+        <div class="absolute -bottom-20 md:bottom-20 md:left-4 right-11 bg-blue-900 w-[80%] md:w-[40%] md:py-20 md:px-10 ">
             <h3 class="text-center">  Campus & Community</h3>
             <h2 class="text-center text-white py-4">
                 Penn Center for Innovation celebrates 10 years
@@ -128,15 +146,19 @@
                 The University’s nexus for technology transfer supports researchers in their 
                 innovative efforts, from CAR T to mRNA advancements that have dramatically reshaped the world.
             </p>
-            <p class="text-center pt-4">Learn More</p>
+            <!-- <p class="text-center pt-4">Learn More</p> -->
+            <div class=" flex items-center justify-center pt-10">
+                <button class="font-serif border rounded-3xl py-2 px-10 text-white">Our History</button>
+            </div>
         </div>
     </section>
+    
     <section class="mt-20  section">
             <h1 class="text-black py-10">Upcoming</h1>
         <div class="flex flex-row gap-8 overflow-x-auto ">
-            <div class="flex flex-col relative w-[400px] bg-cupcake shadow-md p-3">
+            <div class="flex flex-col relative min-w-[300px] bg-cupcake shadow-md p-3">
                 <div class="relative">
-                    <img src="./assets/grad-center-locust-walk.jpeg" alt="" class="max-w-[200px]">
+                    <img src="./assets/grad-center-locust-walk.jpeg" alt="" class="min-w-[300px]">
                     <div class="absolute top-2 right-2 bg-white">
                         <h1 class="bg-red-500 ">Feb</h1>
                         <h3 class="text-black">27</h3>
@@ -155,7 +177,7 @@
                 </div>
             </div>
             
-            <div class="flex flex-col relative w-[400px] bg-cupcake shadow-md p-3">
+            <div class="flex flex-col relative min-w-[300px] bg-cupcake shadow-md p-3">
                 
                 <div class="mt-6">
                     <h1 class="text-black text-sm">Managing Presentation Anxiety</h1>
@@ -167,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col relative w-[400px]  bg-cupcake shadow-md p-3">
+            <div class="flex flex-col relative min-w-[300px]  bg-cupcake shadow-md p-3">
                 
                 <div class="mt-6">
                     <h1 class="text-black text-sm">Managing Presentation Anxiety</h1>
@@ -176,6 +198,214 @@
                         tips and tricks to control anxiety during public 
                         speaking. A Penn graduate student ID is required.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="text-black text-center py-6">
+            More Event Via Upenn Today
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-gray-200 py-10">
+                <div class=" p-10 ml-4 mr-4 border border-dashed border-white ">
+                    <h1 class="text-xl text-black text-center">
+                        Inspiring Impact
+                    </h1>
+                    <p class="text-black text-center">
+                        Your support ignites change locally and globally, transforming Penn into a powerful engine that 
+                        advances knowledge for society's greatest good.
+                    </p>
+                    <div class="flex justify-center items-center py-10">
+                        <button class="text-center border border-gray-400 rounded-3xl text-white py-4 px-10">Support</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-900 py-10">
+                <div class=" p-10 ml-4 mr-4 border border-dashed border-white ">
+                    <h1 class="text-xl text-black text-center">
+                        Inspiring Impact
+                    </h1>
+                    <p class="text-black text-center">
+                        Your support ignites change locally and globally, transforming Penn into a powerful engine that 
+                        advances knowledge for society's greatest good.
+                    </p>
+                    <div class="flex justify-center items-center py-10">
+                        <button class="text-center border-white rounded-3xl text-white py-4 px-10">Support</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-blue-800">
+        <h1 class="text-center py-5 text-3xl" >Penny Priorities</h1>
+        <p class="text-center">
+            A look at a few of our big picture priorities that improve Penn as we create knowledge to benefit the world.
+        </p>
+        <div class="flex py-10 flex-row gap-8 overflow-x-auto ">
+            <div class="flex flex-col relative min-w-[500px] bg-cupcake shadow-md p-3">
+                <div class="relative">
+                    <img src="./assets/Winter-blooms-witchhazel-Morris-Arboretum.jpeg" alt="" class="min-w-[300px]">
+                    
+                </div>
+                <div class=" bg-white flex flex-row justify-between text-center">
+                    <h1 class="w-[60%] self-center text-start text-black">Climatic change</h1>
+                    <p class="bg-red-600 text-white right-2 px-6"><img src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="40" alt=""></p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col relative min-w-[500px] bg-cupcake shadow-md p-3">
+                <div class="relative">
+                    <img src="./assets/car-t-cells-fda-approval-horiz.jpeg" alt="" class="min-w-[300px]">
+                    
+                </div>
+                <div class=" flex flex-row bg-white justify-between text-center">
+                    <h1 class="w-[60%] self-center text-start text-black">Climatic change</h1>
+                    <p class="bg-red-600 text-white right-2 px-6"><img src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="40" alt=""></p>
+                </div>
+            </div>
+
+            <div class="flex flex-col relative min-w-[500px] bg-cupcake shadow-md p-3">
+                <div class="relative">
+                    <img src="./assets/monstrous-mythical-teaser.jpeg" alt="" class="min-w-[300px]">
+                    
+                </div>
+                <div class="flex flex-row bg-white justify-between text-center">
+                    <h1 class="w-[60%] self-center text-start text-black">Climatic change</h1>
+                    <p class="bg-red-600 text-white right-2 px-6"><img src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="40" alt=""></p>
+                </div>
+            </div>
+
+            <div class="flex flex-col relative min-w-[500px] bg-cupcake shadow-md p-3">
+                <div class="relative">
+                    <img src="./assets/moores-law-teaser.jpeg" alt="" class="min-w-[300px]">
+                    
+                </div>
+                <div class="flex flex-row bg-white justify-between text-center">
+                    <h1 class="w-[60%] self-center text-start text-black">Climatic change</h1>
+                    <p class="bg-red-600 text-white right-2 px-6"><img src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="40" alt=""></p>
+                </div>
+            </div>
+
+            <div class="flex flex-col relative min-w-[500px] bg-cupcake shadow-md p-3">
+                <div class="relative">
+                    <img src="./assets/art-matters-fantine-teaser.jpeg" alt="" class="min-w-[300px]">
+                    
+                </div>
+                <div class=" flex flex-row bg-white justify-between text-center">
+                    <h1 class="w-[60%] self-center text-start text-black align-middle">Climatic change</h1>
+                    <p class="bg-red-600 text-white right-2 px-6"><img src="./assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="40" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h1 class="text-center text-3xl py-10 text-black">Stay Connected</h1>
+        <div class="flex flex-row overflow-x-auto ">
+            <div class="flex flex-col relative min-w-[500px] bg-cupcake shadow-md p-3">
+                <div class="relative">
+                    <img src="./assets/car-t-cells-fda-approval-horiz.jpeg" alt="" class="min-w-[300px]">
+                    
+                </div>
+            </div>
+            
+            <div class="flex flex-col relative min-w-[500px] bg-blue-900 shadow-md p-3">
+                <div class="p-6">
+                    <p class="inline-block">
+                        Scott Hensley of Penn Medicine says, “The worst thing we can do is be flat-footed and unprepared, 
+                        because this virus does represent a true pandemic risk.” Faculty members from @PennMedicine and 
+                        @PennVetSchool are working on a new vaccine for the H5N1 virus. They are studying how the virus is 
+                        transmitted and assisting the state in testing samples from birds and mammals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col relative min-w-[500px] bg-cupcake shadow-md p-3 hover:bg-red-600">
+                <img src="./assets/car-t-cells-fda-approval-horiz.jpeg" class="object-cover" alt="">
+                <!-- <div class="py-2 flex flex-row justify-between text-center">
+                    <h1 class="w-[60%] hover:text-white hidden hover:inline">Climatic change</h1>
+                    <p class="bg-red-600 text-white right-2 hover:text-white hidden hover:inline">Arrow icon</p>
+                </div> -->
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white hover:bg-red-600">
+                    <h1 class="w-[60%]">Climatic change</h1>
+                    <p class="right-2">Arrow icon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-blue-800 py-20">
+        <h1 class="text-2xl text-center">
+            Equal Opportunity and Nondiscrimination at Penn
+        </h1>
+        <p class="font-sans text-sm py-10 text-center">
+            The University of Pennsylvania values diversity and seeks talented students, faculty and staff 
+            with diverse backgrounds, experiences, and perspectives. The University of Pennsylvania does not 
+            discriminate on the basis of race, color, sex, sexual orientation, gender identity, religion, creed, 
+            national or ethnic origin, citizenship status, age, disability, veteran status or any other legally protected 
+            class status in the administration of its admissions, financial aid, educational or athletic programs, or other 
+            University-administered programs or in its employment practices. Questions or complaints regarding this policy 
+            should be directed to the Executive Director of the Office of Affirmative Action and Equal Opportunity Programs, 
+            Franklin Building, 3451 Walnut Street, Suite 421, Philadelphia, PA 19104-6106; or (215) 898-6993 (Voice).
+        </p>
+        <div class=" flex items-center justify-center">
+            <button class="font-serif border rounded-3xl py-2 px-10 text-white">Nondiscrimination Statement</button>
+        </div>
+    </section>
+
+    <section class="section object-contain bg-no-repeat" style="background-image: url('./assets/moores-law-teaser.jpeg'); background-size: cover;">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+                <img src="./assets/UPenn-logo.svg" width="150" alt="">
+                <h1 class="py-5">Philadelphia, PA 19104</h1>
+                <p>Telephone: 088738992938</p>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Maps</li>
+                    <li>Parking</li>
+
+                </ul>
+            </div>
+            <div>
+                <h2>Navigation</h2>
+                <div>
+                    <ul>
+                        <li>Alumni</li>
+                        <li>Athletics</li>
+                        <li>Diversity</li>
+                        <li>Health Care</li>
+                        <li>Libraries</li>
+                        <li>Online learning</li>
+                        <li>Penn Global</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Penn's Heritage</h2>
+                <p>
+                    As America’s first university, Penn has a history that dates back to 1740 and shares 
+                    many ties with the colonial city of Philadelphia and the birth of our nation.
+                </p>
+                <div class=" flex items-center justify-center">
+                    <button class="font-serif border rounded-3xl py-2 px-10 text-white">Our History</button>
+                </div>
+                <ul>
+                    <li>Disclaim</li>
+                    <li>Emmergency service</li>
+                    <li>NonDiscriminator</li>
+                    <li>Privacy policy</li>
+                    <li>Report Accessibility Issues and Get Help</li>
+                    <li>Report Copyright Infringement</li>
+                </ul>
+
+                <div class=" flex items-center justify-center gap-4"></div>
+                    <button class="font-serif border rounded-2xl py-2 px-10 text-white">icon</button>
+                    <button class="font-serif border rounded-3xl py-2 px-10 text-white">Our History</button>
                 </div>
             </div>
         </div>
