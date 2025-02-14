@@ -9,8 +9,5 @@ module.exports = {
   daisyui: {
     themes: ["light", "dark", "cupcake"],
   },
-  safelist: [
-    "mb-[101px]" // Prevents Tailwind from removing it in production
-  ],
 }
 
